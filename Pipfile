@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain = "*"
+chromadb = "*"
+pytest = "*"
+langchain-openai = "*"
+langchain-chroma = "*"
+langchain-community = "*"
+lark = "*"
+pypdf = "*"
+cryptography = "*"
+sqlitedict = "*"
+tqdm = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

@@ -1,0 +1,7 @@
+.DS_STORE
+.pytest_cache
+.env.local
+chroma/
+.idea/
+docstore
+docs/
