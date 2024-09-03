@@ -2,11 +2,12 @@
 
 ## Overview
 
-This project consists of three Python scripts designed for different functionalities:
+This project consists of four Python scripts designed for different functionalities:
 
 1. **Download documents**: Downloads and manages documents from remote sources based on a provided configuration file.
 2. **Database and Document Processing**: Handles document processing, including splitting and adding documents to a database.
 3. **Query and Retrieval System**: Manages querying, interactive loops, and retrieval of relevant documents using a multi-vector retrieval approach.
+4. **Chat and Retrieval System**: Manages chatting, interactive loops, and retrieval of relevant documents using a multi-vector retrieval approach.
 
 These scripts work together to manage document processing, querying, and downloading, creating a cohesive system for document management and information retrieval.
 
@@ -15,6 +16,7 @@ These scripts work together to manage document processing, querying, and downloa
 1. [Download documents](#download-documents)
 2. [Database and Document Processing](#database-and-document-processing)
 3. [Query and Retrieval System](#query-and-retrieval-system)
+3. [Chat and Retrieval System](#chat-and-retrieval-system)
 4. [Setup and Installation](#setup-and-installation)
 5. [Usage](#usage)
 6. [Configuration](#configuration)
@@ -75,6 +77,23 @@ This script provides functionality to perform queries against a stored set of do
 
 ---
 
+## Chat and Retrieval System
+
+### Description
+
+This script provides functionality to chat with a stored set of documents using multi-vector retrieval. The retrieval process leverages self-querying and previous chat messages, using vector similarity to provide more accurate and relevant results.
+
+### Key Features
+
+- **Self-Querying**: Automatically generates alternative queries from the user's input to enhance retrieval performance.
+
+### Key Functions
+
+- **`main() -> None`**: Initializes the command-line interface for querying.
+- **`interactive_query_loop() -> None`**: Provides an interactive loop for continuous user chats.
+
+---
+
 ## Setup and Installation
 
 1. **Clone the Repository**: Clone the repository to your local machine.
@@ -107,15 +126,26 @@ This script provides functionality to perform queries against a stored set of do
    python populate_database.py [--reset]
    ```
 
-3. **Query and Retrieval System**:
+3. **Query or chat**:
+   Query with the RAG in interactive mode:
    ```bash
    python query_rag.py
+   ```
+
+   Chat with the RAG in interactive mode:
+   ```bash
+   python chat_rag.py
    ```
 
 ### Command-Line Options
 
 - **`--reset`**: Clears the existing database before processing new documents.
 - **`--query_text`**: Directly queries the system without entering interactive mode.
+
+In interactive mode the following keywords can be used:
+- **`q` or `exit`**: Terminate interactive mode
+- **`r` or `reset`**: Resets the chat history
+- **`ch` or `history` or `chat_history`**: Shows the chat history
 
 ## Configuration
 

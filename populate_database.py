@@ -37,7 +37,7 @@ def main(path: str) -> None:
                 elif not document_hash:
                     print(f"{file_path} does not exist in the database")
                 else:
-                    print(f"{file_path} exists in the database but an older different version.")
+                    print(f"{file_path} exists in the database but an older version.")
 
                 documents = load_documents(file_path)
 

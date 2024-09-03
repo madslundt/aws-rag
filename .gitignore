@@ -1,5 +1,6 @@
 .DS_STORE
 .pytest_cache
+.env
 .env.local
 chroma/
 .idea/

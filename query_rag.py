@@ -2,7 +2,7 @@ import argparse
 import os
 from typing import Optional
 from langchain.retrievers.multi_query import LineListOutputParser
-from env import CONFIG_PATH, DOCSTORE_PATH, DOCSTORE_TABLE_NAME, DOCUMENTS_PATH, OLLAMA_MODEL, PARENT_DOC_ID
+from env import CONFIG_PATH, DOCSTORE_PATH, DOCSTORE_TABLE_NAME, DOCUMENTS_PATH, INCLUDE_SOURCES, OLLAMA_MODEL, PARENT_DOC_ID
 from utils import get_sqlitestore, load_json_file, verbose_print
 from utils.get_vectorstore import get_vectorstore
 from langchain_core.prompts import PromptTemplate
@@ -39,8 +39,13 @@ def interactive_query_loop() -> None:
         query = input("\nQuery: ").strip()
         if query.lower() in {"exit", "q"}:
             break
+        if query.lower() in {"reset", "r"}:
+            print(chr(27) + "[2J") # Clear terminal
+            print("Chat history has been reset")
+            continue
         if query:
             query_rag(query)
+
 
 def get_prompt(template: str, input_variables: list[str]) -> PromptTemplate:
     """
@@ -123,7 +128,7 @@ def get_filenames_based_on_keywords_from_config(keywords: list[str]) -> list[str
 
     return result
 
-def query_rag(query_text: str) -> None:
+def query_rag(query_text: str) -> str:
     """
     Handles the query process, from generating alternative queries to retrieving relevant documents and generating a response.
 
@@ -188,7 +193,11 @@ def query_rag(query_text: str) -> None:
         relevant_docs, source_pages = retrieve_relevant_docs(questions, retriever, relevant_sources)
         response_text = generate_response(query_text, relevant_docs)
 
-        print(f"Response:\n{response_text}\n\nSources: {source_pages}")
+        print(f"Response:\n{response_text}\n")
+
+        if INCLUDE_SOURCES:
+            print(f"Sources:\n{source_pages}\n")
+
         return response_text
 
     except Exception as e:
