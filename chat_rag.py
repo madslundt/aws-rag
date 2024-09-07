@@ -8,7 +8,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain_core.runnables import Runnable
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain_core.messages import HumanMessage, SystemMessage, BaseMessage
+from langchain_core.messages import HumanMessage, AIMessage, BaseMessage
 from langchain.retrievers.multi_vector import MultiVectorRetriever
 
 def main() -> None:
@@ -101,6 +101,7 @@ def get_rag_chain() -> Runnable:
         search_kwargs={"k": 3},
     )
 
+    # reformulate the question based on history, ensuring it’s context-independent.
     contextualize_q_prompt = get_contextualize_question_prompt()
 
     # Create a history-aware retriever
@@ -109,6 +110,7 @@ def get_rag_chain() -> Runnable:
         llm, retriever, contextualize_q_prompt
     )
 
+    # Answer the query concisely using retrieved documents.
     qa_prompt = get_question_answering_prompt()
 
     question_answer_chain = create_stuff_documents_chain(llm, qa_prompt)
@@ -149,7 +151,7 @@ def interactive_query_loop() -> None:
             print(result['answer'])
 
             chat_history.append(HumanMessage(content=query))
-            chat_history.append(SystemMessage(content=result["answer"]))
+            chat_history.append(AIMessage(content=result["answer"]))
 
 
 def get_llm():

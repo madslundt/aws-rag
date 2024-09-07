@@ -1,240 +1,312 @@
 {
-    "documents": [
-      {
-        "keywords": [
-          "authentication",
-          "user management",
-          "identity",
-          "sign-up",
-          "sign-in",
-          "access control"
-        ],
-        "name": "Amazon Cognito",
-        "short_name": "Cognito",
-        "description": "Amazon Cognito provides authentication, authorization, and user management for web and mobile apps. It allows you to add user sign-up, sign-in, and access control to your applications quickly and easily.",
-        "category": "Security, Identity, & Compliance",
-        "documentation": "https://docs.aws.amazon.com/cognito/",
-        "pdfs": [
-          {
-            "url": "https://docs.aws.amazon.com/pdfs/cognito/latest/developerguide/cognito-dg.pdf",
-            "filename": "cognito-dg.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/cognito-user-identity-pools-apiref.pdf",
-            "filename": "cognito-user-identity-pools-apiref.pdf"
-          }
-        ]
-      },
-      {
-        "keywords": [
-          "compute",
-          "virtual machines",
-          "instances",
-          "cloud servers",
-          "EC2"
-        ],
-        "name": "Amazon Elastic Compute Cloud",
-        "short_name": "EC2",
-        "description": "Amazon EC2 is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.",
-        "category": "Compute",
-        "documentation": "https://docs.aws.amazon.com/ec2/",
-        "pdfs": [
-          {
-            "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-ug.pdf",
-            "filename": "ec2-ug.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-types.pdf",
-            "filename": "ec2-types.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/ec2/latest/devguide/ec2-dg.pdf",
-            "filename": "ec2-dg.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ec2-api.pdf",
-            "filename": "ec2-api.pdf"
-          }
-        ]
-      },
-      {
-        "keywords": ["serverless", "functions", "event-driven", "FaaS"],
-        "name": "Amazon Lambda",
-        "short_name": "Lambda",
-        "description": "AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes.",
-        "category": "Compute",
-        "documentation": "https://docs.aws.amazon.com/lambda/",
-        "pdfs": [
-          {
-            "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-dg.pdf",
-            "filename": "lambda-dg.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/serverless/latest/devguide/serverless-core.pdf",
-            "filename": "serverless-core.pdf"
-          }
-        ]
-      },
-      {
-        "keywords": [
-          "networking",
-          "subnets",
-          "IP addressing",
-          "network isolation"
-        ],
-        "name": "Amazon Virtual Private Cloud",
-        "short_name": "VPC",
-        "description": "Amazon VPC lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.",
-        "category": "Networking & Content Delivery",
-        "documentation": "https://docs.aws.amazon.com/vpc/",
-        "pdfs": [
-          {
-            "url": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ug.pdf",
-            "filename": "vpc-ug.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ec2-api.pdf",
-            "filename": "ec2-api.pdf"
-          }
-        ]
-      },
-      {
-        "keywords": ["object storage", "data storage", "file storage", "S3"],
-        "name": "Amazon Simple Storage Service",
-        "short_name": "S3",
-        "description": "Amazon S3 is an object storage service offering industry-leading scalability, data availability, security, and performance. It can be used to store and protect any amount of data for various use cases.",
-        "category": "Storage",
-        "documentation": "https://docs.aws.amazon.com/s3/",
-        "pdfs": [
-          {
-            "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-userguide.pdf",
-            "filename": "s3-userguide.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/s3-api.pdf",
-            "filename": "s3-api.pdf"
-          }
-        ]
-      },
-      {
-        "keywords": ["database", "relational", "SQL", "managed DB"],
-        "name": "Amazon Relational Database Service",
-        "short_name": "RDS",
-        "description": "Amazon RDS makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks.",
-        "category": "Database",
-        "documentation": "https://docs.aws.amazon.com/rds/",
-        "pdfs": [
-          {
-            "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-ug.pdf",
-            "filename": "rds-ug.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/rds-api.pdf",
-            "filename": "rds-api.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/rds-postgresql-relnotes.pdf",
-            "filename": "rds-postgresql-relnotes.pdf"
-          }
-        ]
-      },
-      {
-        "keywords": [
-          "database",
-          "relational",
-          "SQL",
-          "high performance",
-          "distributed"
-        ],
-        "name": "Amazon Aurora",
-        "short_name": "Aurora",
-        "description": "Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud, that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases.",
-        "category": "Database",
-        "documentation": "https://docs.aws.amazon.com/aurora/",
-        "pdfs": [
-          {
-            "url": "https://docs.aws.amazon.com/pdfs/AmazonRDS/latest/AuroraUserGuide/aurora-ug.pdf",
-            "filename": "aurora-ug.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/aurora-postgresql-relnotes.pdf",
-            "filename": "aurora-postgresql-relnotes.pdf"
-          }
-        ]
-      },
-      {
-        "keywords": [
-          "messaging",
-          "pub/sub",
-          "notifications",
-          "push notifications"
-        ],
-        "name": "Amazon Simple Notification Service",
-        "short_name": "SNS",
-        "description": "Amazon SNS is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.",
-        "category": "Application Integration",
-        "documentation": "https://docs.aws.amazon.com/sns/",
-        "pdfs": [
-          {
-            "url": "https://docs.aws.amazon.com/sns/latest/dg/sns-dg.pdf",
-            "filename": "sns-dg.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/sns/latest/api/sns-api.pdf",
-            "filename": "sns-api.pdf"
-          }
-        ]
-      },
-      {
-        "keywords": [
-          "messaging",
-          "queue",
-          "decoupling",
-          "asynchronous processing"
-        ],
-        "name": "Amazon Simple Queue Service",
-        "short_name": "SQS",
-        "description": "Amazon SQS is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications.",
-        "category": "Application Integration",
-        "documentation": "https://docs.aws.amazon.com/sqs/",
-        "pdfs": [
-          {
-            "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dg.pdf",
-            "filename": "sqs-dg.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/sqs-api.pdf",
-            "filename": "sqs-api.pdf"
-          }
-        ]
-      },
-      {
-        "keywords": [
-          "monitoring",
-          "logging",
-          "metrics",
-          "alarms",
-          "observability"
-        ],
-        "name": "Amazon CloudWatch",
-        "short_name": "CloudWatch",
-        "description": "Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers.",
-        "category": "Management & Governance",
-        "documentation": "https://docs.aws.amazon.com/cloudwatch/",
-        "pdfs": [
-          {
-            "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/acw-ug.pdf",
-            "filename": "acw-ug.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/acw-api.pdf",
-            "filename": "acw-api.pdf"
-          },
-          {
-            "url": "https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/cloudwatchrum-api.pdf",
-            "filename": "cloudwatchrum-api.pdf"
-          }
-        ]
-      }
-    ]
-  }
+  "documents": [
+    {
+      "keywords": [
+        "authentication",
+        "user management",
+        "identity",
+        "sign-up",
+        "sign-in",
+        "access control"
+      ],
+      "name": "Amazon Cognito",
+      "short_name": "Cognito",
+      "description": "Amazon Cognito provides authentication, authorization, and user management for web and mobile apps. It allows you to add user sign-up, sign-in, and access control to your applications quickly and easily.",
+      "category": "Security, Identity, & Compliance",
+      "documentation": "https://docs.aws.amazon.com/cognito/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/pdfs/cognito/latest/developerguide/cognito-dg.pdf",
+          "filename": "cognito-dg.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/cognito-user-identity-pools-apiref.pdf",
+          "filename": "cognito-user-identity-pools-apiref.pdf"
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "compute",
+        "virtual machines",
+        "instances",
+        "cloud servers",
+        "EC2"
+      ],
+      "name": "Amazon Elastic Compute Cloud",
+      "short_name": "EC2",
+      "description": "Amazon EC2 is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.",
+      "category": "Compute",
+      "documentation": "https://docs.aws.amazon.com/ec2/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-ug.pdf",
+          "filename": "ec2-ug.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-types.pdf",
+          "filename": "ec2-types.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/ec2/latest/devguide/ec2-dg.pdf",
+          "filename": "ec2-dg.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ec2-api.pdf",
+          "filename": "ec2-api.pdf"
+        }
+      ]
+    },
+    {
+      "keywords": ["serverless", "functions", "event-driven", "FaaS"],
+      "name": "Amazon Lambda",
+      "short_name": "Lambda",
+      "description": "AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes.",
+      "category": "Compute",
+      "documentation": "https://docs.aws.amazon.com/lambda/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-dg.pdf",
+          "filename": "lambda-dg.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/serverless/latest/devguide/serverless-core.pdf",
+          "filename": "serverless-core.pdf"
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "networking",
+        "subnets",
+        "IP addressing",
+        "network isolation"
+      ],
+      "name": "Amazon Virtual Private Cloud",
+      "short_name": "VPC",
+      "description": "Amazon VPC lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.",
+      "category": "Networking & Content Delivery",
+      "documentation": "https://docs.aws.amazon.com/vpc/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ug.pdf",
+          "filename": "vpc-ug.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ec2-api.pdf",
+          "filename": "ec2-api.pdf"
+        }
+      ]
+    },
+    {
+      "keywords": ["object storage", "data storage", "file storage", "S3"],
+      "name": "Amazon Simple Storage Service",
+      "short_name": "S3",
+      "description": "Amazon S3 is an object storage service offering industry-leading scalability, data availability, security, and performance. It can be used to store and protect any amount of data for various use cases.",
+      "category": "Storage",
+      "documentation": "https://docs.aws.amazon.com/s3/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-userguide.pdf",
+          "filename": "s3-userguide.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/s3-api.pdf",
+          "filename": "s3-api.pdf"
+        }
+      ]
+    },
+    {
+      "keywords": ["database", "relational", "SQL", "managed DB"],
+      "name": "Amazon Relational Database Service",
+      "short_name": "RDS",
+      "description": "Amazon RDS makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks.",
+      "category": "Database",
+      "documentation": "https://docs.aws.amazon.com/rds/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-ug.pdf",
+          "filename": "rds-ug.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/rds-api.pdf",
+          "filename": "rds-api.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/rds-postgresql-relnotes.pdf",
+          "filename": "rds-postgresql-relnotes.pdf"
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "database",
+        "relational",
+        "SQL",
+        "high performance",
+        "distributed"
+      ],
+      "name": "Amazon Aurora",
+      "short_name": "Aurora",
+      "description": "Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud, that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases.",
+      "category": "Database",
+      "documentation": "https://docs.aws.amazon.com/aurora/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/pdfs/AmazonRDS/latest/AuroraUserGuide/aurora-ug.pdf",
+          "filename": "aurora-ug.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/aurora-postgresql-relnotes.pdf",
+          "filename": "aurora-postgresql-relnotes.pdf"
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "messaging",
+        "pub/sub",
+        "notifications",
+        "push notifications"
+      ],
+      "name": "Amazon Simple Notification Service",
+      "short_name": "SNS",
+      "description": "Amazon SNS is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.",
+      "category": "Application Integration",
+      "documentation": "https://docs.aws.amazon.com/sns/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/sns/latest/dg/sns-dg.pdf",
+          "filename": "sns-dg.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/sns/latest/api/sns-api.pdf",
+          "filename": "sns-api.pdf"
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "messaging",
+        "queue",
+        "decoupling",
+        "asynchronous processing"
+      ],
+      "name": "Amazon Simple Queue Service",
+      "short_name": "SQS",
+      "description": "Amazon SQS is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications.",
+      "category": "Application Integration",
+      "documentation": "https://docs.aws.amazon.com/sqs/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dg.pdf",
+          "filename": "sqs-dg.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/sqs-api.pdf",
+          "filename": "sqs-api.pdf"
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "monitoring",
+        "logging",
+        "metrics",
+        "alarms",
+        "observability"
+      ],
+      "name": "Amazon CloudWatch",
+      "short_name": "CloudWatch",
+      "description": "Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers.",
+      "category": "Management & Governance",
+      "documentation": "https://docs.aws.amazon.com/cloudwatch/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/acw-ug.pdf",
+          "filename": "acw-ug.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/acw-api.pdf",
+          "filename": "acw-api.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/cloudwatchrum-api.pdf",
+          "filename": "cloudwatchrum-api.pdf"
+        }
+      ]
+    },
+    {
+      "keywords": ["NoSQL", "key-value", "document", "serverless", "scalable"],
+      "name": "Amazon DynamoDB",
+      "short_name": "DynamoDB",
+      "description": "Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. It supports both key-value and document data models.",
+      "category": "Database",
+      "documentation": "https://docs.aws.amazon.com/dynamodb/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dynamodb-dg.pdf",
+          "filename": "dynamodb-dg.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/dynamodb-api.pdf",
+          "filename": "dynamodb-api.pdf"
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "AI",
+        "ML",
+        "foundation models",
+        "generative AI",
+        "machine learning"
+      ],
+      "name": "Amazon Bedrock",
+      "short_name": "Bedrock",
+      "description": "Amazon Bedrock is a fully managed service that makes foundation models from AWS and leading AI startups available via an API, helping customers to build and scale generative AI applications.",
+      "category": "Machine Learning",
+      "documentation": "https://docs.aws.amazon.com/bedrock/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-ug.pdf",
+          "filename": "bedrock-ug.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/bedrock/latest/studio-ug/bedrock-studio-user-guide.pdf",
+          "filename": "bedrock-studio-user-guide.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/bedrock/latest/APIReference/bedrock-api.pdf",
+          "filename": "bedrock-api.pdf"
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "DNS",
+        "domain registration",
+        "routing",
+        "high availability",
+        "scalability",
+        "health checks",
+        "traffic management"
+      ],
+      "name": "Amazon Route 53",
+      "short_name": "Route 53",
+      "description": "Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service. It is designed to route end-user requests to internet applications by translating domain names into IP addresses. Route 53 also offers domain registration, health checks, and DNS failover for better traffic management.",
+      "category": "Networking & Content Delivery",
+      "documentation": "https://docs.aws.amazon.com/route53/",
+      "pdfs": [
+        {
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route53-dg.pdf",
+          "filename": "route53-dg.pdf"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/Route53/latest/APIReference/route53-apiref.pdf",
+          "filename": "route53-apiref.pdf"
+        }
+      ]
+    }
+  ]
+}
